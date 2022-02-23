@@ -1,0 +1,59 @@
+---
+layout: default
+---
+
+<div class="wrapper">
+  <article itemscope itemtype="http://schema.org/BlogPosting">
+
+    <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
+    <time class="post-date" class="dt-published" datetime="{{ page.date | date_to_xmlschema }}"
+    itemprop="datePublished">
+    {{ page.date | date: site.data_formats.date_format_short }}
+    </time>
+
+    <div class="post-content e-content" itemprop="articleBody">
+      {{ content }}
+    </div>
+    <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+  </article>
+  
+  <div class="post-tag">
+    {% if page.categories.size > 0 %}
+    <div class="category-tag">
+      {% for tag in page.categories %}
+      <a href="/tags/#{{tag}}">
+          <div># {{ tag | upcase }}</div>
+      </a>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+
+  <div class="post-image-viewer">
+    <div class="image-viewer-wrapper">
+      <img src="">
+    </div>
+  </div>
+
+</div>
+
+<script>
+
+  let toc_item_count = document.querySelectorAll(".toc-sidebar-item").length
+  
+  if(toc_item_count < 2) {
+    if(document.querySelector("#sidebar") != null) {
+      document.querySelector("#sidebar").remove()
+    }
+  }
+
+  let imgDom = document.querySelector(".post-image-viewer");
+  document.querySelectorAll(".post-content img").forEach(e => e.addEventListener("click", showImage))
+  imgDom.addEventListener("click", e => imgDom.style.display = "none");
+
+  function showImage(evt) {
+    let imgDomImage = document.querySelector(".post-image-viewer img");
+    imgDomImage.src = evt.target.src;
+    imgDom.style.display = "block";
+  }
+</script>
