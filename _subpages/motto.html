@@ -1,0 +1,16 @@
+---
+title: Mootos
+layout: default
+permalink: /motto.html
+---
+
+<div class="wrapper motto">
+    <ul class="motto-list">
+        {% for motto in site.data.motto %}
+        <li>
+            <p>{{ motto.text }}</p>
+            <p><strong>{{ motto.author }} </strong></p>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
