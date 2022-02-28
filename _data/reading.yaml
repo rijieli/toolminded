@@ -12,3 +12,9 @@ productivity:
 reading:
   - name: Reeder
     site: https://www.reederapp.com
+  - name: Inoreader
+    site: https://www.innoreader.com
+    
+podcast:
+  - name: Xiaoyuzhou
+    site: https://xiaoyuzhoufm.com
