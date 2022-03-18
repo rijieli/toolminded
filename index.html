@@ -1,0 +1,38 @@
+---
+layout: default
+---
+
+<div class="categories">
+    <div class="wrapper">
+        <div class="motto-bar">
+            <p>It’s a good idea to know when we are teaching the tools of science.</p>
+        </div>
+        <div class="recent-update">
+            <h2>Recent Update</h2>
+            <div class="recent-update-date">2022-02-30 20:33</div>
+            <div class="recent-update-card">
+                <h3 class="recent-update-card-title">
+                    Agenda
+                </h3>
+                <div class="tag-group">
+                    <div class="tag-item">Productive</div>
+                </div>
+                <p>A tool link note with calendar.</p>
+            </div>
+        </div>
+        <div class="tool-section">
+            {% for group in site.data.tools %}
+            <div class="tool-group">
+                <h2 class="tool-group-title">{{ group.type | capitalize }}</h2>
+                <div class="tool-group-list">
+                    <ul>
+                        {% for item in group.items %}
+                        <li class="tool-group-item"> {{ item.name }} </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

@@ -1,7 +1,0 @@
----
-layout: post
----
-
-In order to talk to each other, we have to have words, and that’s all right. It’s a good idea to try to see the difference, and it’s a good idea to know when we are teaching the **tools** of science, such as words, and when we are teaching science itself.
-
-**Richard Feynman**

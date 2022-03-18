@@ -1,0 +1,23 @@
+- type: design
+  items:
+    - name: Sketch
+      site: https://www.sketch.com
+    - name: Figma
+      site: https://www.figma.com
+
+- type: productivity
+  items:
+    - name: Things
+      site: https://culturedcode.com/things
+
+- type: reading
+  items:
+    - name: Reeder
+      site: https://www.reederapp.com
+    - name: Inoreader
+      site: https://www.innoreader.com
+    
+- type: podcast
+  items:
+    - name: Xiaoyuzhou
+      site: https://xiaoyuzhoufm.com
