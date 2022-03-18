@@ -1,10 +1,13 @@
 @charset "utf-8";
 
 // Define defaults for each variable.
-
+@import url('https://rsms.me/inter/inter.css');
 $base-font-family: ui-sans-serif, system-ui, -apple-system, Helvetica, "Helvetica Neue", PingFang SC,
   BlinkMacSystemFont, "Segoe UI", Roboto, Arial, "Microsoft YaHei", sans-serif,
   "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$inter-font-family: "Inter", ui-sans-serif, system-ui, -apple-system, Helvetica, "Helvetica Neue", PingFang SC,
+BlinkMacSystemFont, "Segoe UI", Roboto, Arial, "Microsoft YaHei", sans-serif,
+"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
 $serif-font-family: "PT Serif", ui-serif, Georgia, "STSongti SC", "SimSong", "STSong", "Source Serif Pro", "noto serif", serif;
 $monospace-font-family: ui-monospace, Monaco, Menlo, "SF Mono Regular", "Lucida Console", SFMono-Regular, Consolas, "Courier New", Liberation Mono, monospace;
 
@@ -16,17 +19,20 @@ $heavy-font-weight: 600;
 $small-font-size: $base-font-size * 0.875 !default;
 $spacing-unit: 30px !default;
 
+$black-color: #000 !default;
+$black-color-darkmode: #fff !default;
+
 // Color defines
-$dark-color: #222 !default;
+$dark-color: #555 !default;
 $dark-color-darkmode: #eee !default;
 
 $white-color: #fff !default;
 $white-color-darkmode: #0d0f13 !default;
 
-$grey-color: #e8e8e8 !default;
+$grey-color: #F7F7F7 !default;
 $grey-color-darkmode: #14161c !default;
 
-$grey-dark-color: #888888 !default;
+$grey-dark-color: #555555 !default;
 $grey-dark-color-darkmode: #aaaaaa !default;
 
 $blue-color: rgb(21, 108, 207) !default;
@@ -44,7 +50,7 @@ $content-width: 1080px !default;
 $on-palm: 512px !default;
 $on-laptop: 960px !default;
 
-$nav-height: 66px !default;
+$nav-height: 120px !default;
 
 // Use media queries like this:
 // @include media-query($on-palm) {
