@@ -36,6 +36,12 @@ Use global HTML header.
 <head>
 ```
 
+## Tool logo size.
+
+90x90 or 180x180 with alpha png format, file name should be lower case.
+
+folder: assets/tool-icon
+
 ## Dependencies Versions
 
 https://pages.github.com/versions/
