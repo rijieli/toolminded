@@ -1,0 +1,64 @@
+@media screen and (prefers-color-scheme: dark) {
+  .motto-bar {
+    border: 2px solid $black-color-darkmode;
+
+    p {
+      color: $black-color-darkmode;
+    }
+  }
+
+  .section-title {
+    h2 {
+      color: $black-color-darkmode;
+    }
+
+    .section-subtitle {
+      color: $dark-color-darkmode;
+    }
+  }
+
+  .recent-update-card {
+    background-color: $grey-color-darkmode;
+
+    .recent-update-info {
+      .recent-update-meta {
+        .recent-update-card-title {
+          color: $black-color-darkmode;
+        }
+
+        .tag-item {
+          color: $dark-color-darkmode;
+          background-color: $white-color-darkmode;
+        }
+      }
+    }
+
+    .recent-update-card-description {
+      color: $dark-color-darkmode;
+    }
+  }
+
+  .tool-group-list {
+    ul {
+      .tool-item {
+        background-color: $grey-color-darkmode;
+
+        .tool-item-title {
+          color: $black-color-darkmode;
+
+          &:visited {
+            color: $black-color-darkmode;
+          }
+        }
+      }
+    }
+  }
+
+  .tool-link:visited {
+    color: $black-color-darkmode !important;
+  }
+
+  .tool-link:hover {
+    color: $blue-color !important;
+  }
+}

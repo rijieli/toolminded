@@ -29,12 +29,12 @@
 }
 
 .tool-link {
-    text-decoration: none;
+  text-decoration: none;
 
-    &:hover {
-        text-decoration: none;
-        color: $blue-color !important;
-    }
+  &:hover {
+    text-decoration: none;
+    color: $blue-color !important;
+  }
 }
 
 .section-title {
@@ -62,67 +62,67 @@
 }
 
 .recent-update-card {
-    background-color: $grey-color;
-    height: 120px;
-    border-radius: $card-border-radius;
+  background-color: $grey-color;
+  height: 120px;
+  border-radius: $card-border-radius;
+  display: flex;
+  align-items: center;
+  font-family: $base-font-family;
+
+  .recent-update-info {
     display: flex;
-    align-items: center;
-    font-family: $base-font-family;
+    margin: 0 0 0 20px;
 
-    .recent-update-info {
-        display: flex;
-        margin: 0 0 0 20px;
-
-        img {
-            height: 90px;
-            width: 90px;
-            object-fit: contain;
-        }
-
-        .recent-update-meta {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            margin-left: 20px;
-
-            .recent-update-card-title {
-                color: $black-color;
-                font-size: 32px;
-                font-weight: 600;
-                line-height: 38px;
-                margin: 0 0 5px 0;
-                display: block;
-            }
-            
-            .tag-item {
-                font-weight: 600;
-                text-decoration: none;
-                color: $dark-color;
-                background-color: $white-color;
-                border-radius: $card-border-radius;
-                text-align: center;
-                padding: 0 12px;
-
-                &:hover {
-                    color: $blue-color;
-                }
-            }
-        }
+    img {
+      height: 90px;
+      width: 90px;
+      object-fit: contain;
     }
 
-    .recent-update-card-description {
-        margin: 0 20px 0 25px;
-        font-size: 28px;
-        color: $dark-color;
-        flex: 1;
-        overflow-x: auto;
-        overflow-y: hidden;
-        white-space: nowrap;
-        line-height: 3;
-        text-align: center;
+    .recent-update-meta {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-left: 20px;
+
+      .recent-update-card-title {
+        color: $black-color;
+        font-size: 32px;
         font-weight: 600;
-        font-family: $serif-font-family;
+        line-height: 38px;
+        margin: 0 0 5px 0;
+        display: block;
+      }
+
+      .tag-item {
+        font-weight: 600;
+        text-decoration: none;
+        color: $dark-color;
+        background-color: $white-color;
+        border-radius: $card-border-radius;
+        text-align: center;
+        padding: 0 12px;
+
+        &:hover {
+          color: $blue-color;
+        }
+      }
     }
+  }
+
+  .recent-update-card-description {
+    margin: 0 20px 0 25px;
+    font-size: 28px;
+    color: $dark-color;
+    flex: 1;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    line-height: 3;
+    text-align: center;
+    font-weight: 600;
+    font-family: $serif-font-family;
+  }
 }
 
 .tool-group-list {
