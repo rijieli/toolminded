@@ -7,27 +7,41 @@ layout: default
         <div class="motto-bar">
             <p>It’s a good idea to know when we are teaching the tools of science.</p>
         </div>
-        <div class="recent-update">
-            <h2>Recent Update</h2>
-            <div class="recent-update-date">2022-02-30 20:33</div>
+        <div class="recent-update m-top-20">
+            {% assign recent_item = site.data.recent_update %}
+            <div class="section-title">
+                <h2>Recent Added</h2>
+                <div class="section-subtitle">{{ recent_item.lastupdate | date: "%b %d, %Y at %R" }}</div>
+            </div>
             <div class="recent-update-card">
-                <h3 class="recent-update-card-title">
-                    Agenda
-                </h3>
-                <div class="tag-group">
-                    <div class="tag-item">Productive</div>
+                <div class="recent-update-info">
+                    <img src="/assets/tool-icon/{{recent_item.name | lower}}.png" alt="icon">
+                    <div class="recent-update-meta">
+                        <a class="recent-update-card-title tool-link" href="{{recent_item.site}}" target="_blank">
+                            {{ recent_item.name }}
+                        </a>
+                        <a class="tag-item" href="#{{recent_item.category | lower}}">{{ recent_item.category | upcase }}</a>
+                    </div>
                 </div>
-                <p>A tool link note with calendar.</p>
+                <p class="recent-update-card-description">{{ recent_item.description }}</p>
             </div>
         </div>
-        <div class="tool-section">
+        <div class="tool-section m-top-20">
             {% for group in site.data.tools %}
-            <div class="tool-group">
-                <h2 class="tool-group-title">{{ group.type | capitalize }}</h2>
+            <div class="tool-group m-bottom-18" id="{{group.type | lower}}">
+                <div class="section-title">
+                    <h2>{{ group.type | capitalize }}</h2>
+                    <div class="section-subtitle">{{ group.lastupdate | date: "%b %d, %Y at %R" }}</div>
+                </div>
                 <div class="tool-group-list">
                     <ul>
                         {% for item in group.items %}
-                        <li class="tool-group-item"> {{ item.name }} </li>
+                        <li class="tool-item"> 
+                            <a href="{{item.site}}" target="_blank"><img src="/assets/tool-icon/{{item.name | lower}}.png" alt="" class="tool-icon"></a>
+                            <a class="tool-item-title tool-link" href="{{item.site}}" target="_blank">
+                            {{- item.name -}}
+                            </a>
+                        </li>
                         {% endfor %}
                     </ul>
                 </div>

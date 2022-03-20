@@ -1,23 +1,48 @@
 - type: design
+  lastupdate: 2022-03-20T11:49:00
   items:
     - name: Sketch
+      category: design
       site: https://www.sketch.com
+      description: Elite design tool bring smooth experience.
     - name: Figma
       site: https://www.figma.com
 
 - type: productivity
+  lastupdate: 2022-03-20T12:27:00
   items:
     - name: Things
       site: https://culturedcode.com/things
+    - name: TickTick
+      category: productivity
+      site: https://www.ticktick.com/
+      description: Robust task managing tool with all platform supports.
 
 - type: reading
+  lastupdate: 2022-03-19T12:41:00
   items:
     - name: Reeder
       site: https://www.reederapp.com
     - name: Inoreader
       site: https://www.innoreader.com
+
+- type: writing
+  lastupdate: 2022-03-19T12:41:00
+  items:
+    - name: Ulysses
+      site: https://www.Ulysses.app
+      description: Long article writing tool with mental flow.
+
+- type: Editor
+  lastupdate: 2022-03-20T12:27:00
+  items:
+    - name: CotEditor
+      site: https://coteditor.com
+    - name: Sublime Text
+      site: https://www.sublimetext.com
     
 - type: podcast
+  lastupdate: 2022-03-19T12:41:00
   items:
     - name: Xiaoyuzhou
       site: https://xiaoyuzhoufm.com
