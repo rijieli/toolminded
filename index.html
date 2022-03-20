@@ -15,12 +15,12 @@ layout: default
             </div>
             <div class="recent-update-card">
                 <div class="recent-update-info">
-                    <img src="/assets/tool-icon/{{recent_item.name | lower}}.png" alt="icon">
+                    <img src="/assets/tool-icon/{{recent_item.name | downcase}}.png" alt="icon">
                     <div class="recent-update-meta">
                         <a class="recent-update-card-title tool-link" href="{{recent_item.site}}" target="_blank">
                             {{ recent_item.name }}
                         </a>
-                        <a class="tag-item" href="#{{recent_item.category | lower}}">{{ recent_item.category | upcase }}</a>
+                        <a class="tag-item" href="#{{recent_item.category | downcase}}">{{ recent_item.category | upcase }}</a>
                     </div>
                 </div>
                 <p class="recent-update-card-description">{{ recent_item.description }}</p>
@@ -28,7 +28,7 @@ layout: default
         </div>
         <div class="tool-section m-top-20">
             {% for group in site.data.tools %}
-            <div class="tool-group m-bottom-18" id="{{group.type | lower}}">
+            <div class="tool-group m-bottom-18" id="{{group.type | downcase}}">
                 <div class="section-title">
                     <h2>{{ group.type | capitalize }}</h2>
                     <div class="section-subtitle">{{ group.lastupdate | date: "%b %d, %Y at %R" }}</div>
@@ -37,7 +37,7 @@ layout: default
                     <ul>
                         {% for item in group.items %}
                         <li class="tool-item"> 
-                            <a href="{{item.site}}" target="_blank"><img src="/assets/tool-icon/{{item.name | lower}}.png" alt="" class="tool-icon"></a>
+                            <a href="{{item.site}}" target="_blank"><img src="/assets/tool-icon/{{item.name | downcase}}.png" alt="" class="tool-icon"></a>
                             <a class="tool-item-title tool-link" href="{{item.site}}" target="_blank">
                             {{- item.name -}}
                             </a>
@@ -50,3 +50,5 @@ layout: default
         </div>
     </div>
 </div>
+
+{% include scroll_to_top.html %}
