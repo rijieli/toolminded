@@ -11,20 +11,34 @@
 }
 
 .motto-bar {
-  height: 64px;
   border: 2px solid black;
   border-radius: $card-border-radius;
   display: flex;
   align-items: center;
   margin: 20px 0 0 0;
 
+  @include media-query($on-palm) {
+    margin-top: 10px;
+    border-radius: 14px;
+  }
+
   p {
     width: 100%;
     margin: 0px 50px 0px 50px;
+    padding: 20px 0 20px 0px;
     font-weight: 500;
     font-size: 18px;
     line-height: 22px;
     color: black;
+
+    @include media-query($on-laptop) {
+      margin: 0px 20px 0px 20px;
+    }
+  
+    @include media-query($on-palm) {
+      margin: 0px 20px 0px 20px;
+      padding: 8px 0 8px 0px;
+    }
   }
 }
 
@@ -58,12 +72,16 @@
     color: $dark-color;
     line-height: 40px;
     margin: 0 0 0 20px;
+
+    @include media-query($on-palm) {
+      display: none;
+    }
   }
 }
 
 .recent-update-card {
   background-color: $grey-color;
-  height: 120px;
+  height: 106px;
   border-radius: $card-border-radius;
   display: flex;
   align-items: center;
@@ -74,8 +92,8 @@
     margin: 0 0 0 20px;
 
     img {
-      height: 90px;
-      width: 90px;
+      height: 80px;
+      width: 80px;
       object-fit: contain;
     }
 
@@ -87,7 +105,7 @@
 
       .recent-update-card-title {
         color: $black-color;
-        font-size: 32px;
+        font-size: 30px;
         font-weight: 600;
         line-height: 38px;
         margin: 0 0 5px 0;
@@ -97,9 +115,10 @@
       .tag-item {
         font-weight: 600;
         text-decoration: none;
+        font-size: 16px;
         color: $dark-color;
         background-color: $white-color;
-        border-radius: $card-border-radius;
+        border-radius: 6px;
         text-align: center;
         padding: 0 12px;
 
@@ -112,7 +131,7 @@
 
   .recent-update-card-description {
     margin: 0 20px 0 25px;
-    font-size: 28px;
+    font-size: 26px;
     color: $dark-color;
     flex: 1;
     overflow-x: auto;
@@ -122,6 +141,10 @@
     text-align: center;
     font-weight: 600;
     font-family: $serif-font-family;
+
+    @include media-query($on-palm) {
+      display: none;
+    }
   }
 }
 
@@ -134,9 +157,9 @@
     overflow-y: hidden;
 
     .tool-item {
-      margin: 0 36px 0 0;
-      height: 200px;
-      width: 280px;
+      margin: 0 20px 0 0;
+      height: 180px;
+      width: 220px;
       display: flex;
       align-items: center;
       border-radius: $card-border-radius;
@@ -145,11 +168,22 @@
       flex: none;
       flex-direction: column;
 
+      @include media-query($on-palm) {
+        width: 180px;
+        height: 140px;
+        margin-right: 10px;
+      }
+
       .tool-icon {
         height: 90px;
         width: 90px;
         object-fit: contain;
         margin: 0 0 5px 0;
+
+        @include media-query($on-palm) {
+          height: 70px;
+          width: 70px;
+        }
       }
 
       .tool-item-title {
