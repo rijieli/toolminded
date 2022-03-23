@@ -27,11 +27,14 @@
       site: https://www.innoreader.com
 
 - type: writing
-  lastupdate: 2022-03-19T12:41:00
+  lastupdate: 2022-03-23T09:23:00
   items:
     - name: Ulysses
       site: https://www.Ulysses.app
       description: Long article writing tool with mental flow.
+    - name: iA Writer
+      site: https://ia.net/
+      description: Plain text wrting tool.
 
 - type: Editor
   lastupdate: 2022-03-20T12:27:00
