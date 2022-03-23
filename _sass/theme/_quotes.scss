@@ -1,0 +1,27 @@
+.quotes {
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+
+.quotes-list {
+    color: $black-color;
+    display: block;
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    font-size: 18px;
+
+    li {
+        margin: 0 0 20px 0;
+    }
+
+    .quote-text {
+        font-family: $serif-font-family;
+        margin: 0;
+        margin-bottom: 6px;
+    }
+
+    .quote-author {
+        font-weight: 700;
+    }
+}

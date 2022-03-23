@@ -1,0 +1,19 @@
+---
+title: Quotes
+layout: default
+permalink: /quotes.html
+---
+
+<div class="wrapper quotes">
+    <ul class="quotes-list">
+        {% for quote in site.data.quotes %}
+        <li>
+            {% assign quotelines = quote.text | strip | newline_to_br | split: '<br />' %}
+            {% for line in quotelines%}
+            <p class="quote-text">{{- line -}}</p>
+            {% endfor %}
+            <p class="quote-author">{{ quote.author }}{% if quote.book %}{{ quote.book | prepend: ", "}}{% endif %}</p>
+        </li>
+        {% endfor %}
+    </ul>
+</div>

@@ -4,8 +4,9 @@ layout: default
 
 <div class="categories">
     <div class="wrapper">
-        <div class="motto-bar">
-            <p>It’s a good idea to know when we are teaching the tools of science.</p>
+        <div class="quote-bar">
+            {% assign random_quote = site.data.quotes | where: "highlight", "true" | sample %}
+            <a href="/quotes">First we build the tools, then they build us.</a>
         </div>
         <div class="recent-update m-top-20">
             {% assign recent_item = site.data.recent_update %}

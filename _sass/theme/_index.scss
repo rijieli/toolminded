@@ -10,7 +10,7 @@
   margin: 0 0 18px 0 !important;
 }
 
-.motto-bar {
+.quote-bar {
   border: 2px solid black;
   border-radius: $card-border-radius;
   display: flex;
@@ -22,7 +22,7 @@
     border-radius: 14px;
   }
 
-  p {
+  a {
     width: 100%;
     margin: 0px 50px 0px 50px;
     padding: 20px 0 20px 0px;
@@ -105,7 +105,7 @@
 
       .recent-update-card-title {
         color: $black-color;
-        font-size: 30px;
+        font-size: 28px;
         font-weight: 600;
         line-height: 38px;
         margin: 0 0 5px 0;
@@ -175,10 +175,10 @@
       }
 
       .tool-icon {
-        height: 90px;
-        width: 90px;
+        height: 80px;
+        width: 80px;
         object-fit: contain;
-        margin: 0 0 5px 0;
+        margin: 0 0 8px 0;
 
         @include media-query($on-palm) {
           height: 70px;

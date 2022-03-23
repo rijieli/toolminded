@@ -42,6 +42,40 @@ Use global HTML header.
 
 folder: assets/tool-icon
 
+## Quotes
+
+[goodreads](https://www.goodreads.com/search?page=1&q=tool&search_type=quotes&tab=quotes)
+
+```js
+var s = ""
+
+document.querySelectorAll(".quoteText").forEach(e => {
+	let innerString = e.innerText.trim()
+	let arr = innerString.split("— ")
+	
+	if(arr[0].indexOf("tool") == -1) { return }
+	assert(arr.length == 2, e)
+	
+	let quoteText = arr[0].trim().slice(1, -1)
+	let authorAndBook = arr[1].trim()
+	
+	s += "- text: |\n"
+	for(const ql of quoteText.split("\n")) {
+		s += "    " + ql + "\n"
+	}
+	
+	let dividerPos = authorAndBook.indexOf(" (")
+	if(dividerPos != -1) {
+		s += "  author: " + authorAndBook.slice(0, dividerPos).trim() + "\n"
+		s += "  book: |\n    " + authorAndBook.slice(dividerPos+2, -1) + "\n"
+	} else {
+		s += "  author: " + authorAndBook + "\n"	
+	}
+})
+
+console.log(s)
+```
+
 ## Dependencies Versions
 
 https://pages.github.com/versions/
