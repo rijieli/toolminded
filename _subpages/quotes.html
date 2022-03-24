@@ -7,7 +7,7 @@ permalink: /quotes.html
 <div class="wrapper quotes">
     <ul class="quotes-list">
         {% for quote in site.data.quotes %}
-        <li>
+        <li id="quote-{{ forloop.index }}">
             {% assign quotelines = quote.text | strip | newline_to_br | split: '<br />' %}
             {% for line in quotelines%}
             <p class="quote-text">{{- line -}}</p>

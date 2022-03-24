@@ -1,5 +1,5 @@
 .toc-sidebar-header {
-    font-size: 16px;
+    font-size: $iii-font-size;
     margin: 10px 0px;
     font-weight: bold;
 }
@@ -7,7 +7,7 @@
 .toc-sidebar {
 
     margin: 0;
-    font-size: 14px;
+    font-size: $iiii-font-size;
 
     .toc-sidebar-item {
         list-style: none;

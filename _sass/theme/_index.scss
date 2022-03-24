@@ -15,19 +15,19 @@
   border-radius: $card-border-radius;
   display: flex;
   align-items: center;
-  margin: 20px 0 0 0;
+  margin: 28px 0 0 0;
+  font-weight: 500;
+  font-size: $iii-font-size;
 
   @include media-query($on-palm) {
-    margin-top: 10px;
-    border-radius: 14px;
+    margin-top: 20px;
+    border-radius: 12px;
   }
 
   a {
     width: 100%;
-    margin: 0px 50px 0px 50px;
-    padding: 20px 0 20px 0px;
-    font-weight: 500;
-    font-size: 18px;
+    margin: 0px 36px 0px 36px;
+    padding: 18px 0 18px 0px;
     line-height: 22px;
     color: black;
 
@@ -58,7 +58,7 @@
   height: 75px;
 
   h2 {
-    font-size: 30px;
+    font-size: $i-font-size;
     line-height: 40px;
     font-weight: 800;
     color: $black-color;
@@ -67,15 +67,11 @@
   }
 
   .section-subtitle {
-    font-size: 18px;
+    font-size: $iii-font-size;
     font-weight: 600;
     color: $dark-color;
     line-height: 40px;
-    margin: 0 0 0 20px;
-
-    @include media-query($on-palm) {
-      display: none;
-    }
+    margin: 0 0 0 18px;
   }
 }
 
@@ -105,7 +101,7 @@
 
       .recent-update-card-title {
         color: $black-color;
-        font-size: 28px;
+        font-size: $i-font-size;
         font-weight: 600;
         line-height: 38px;
         margin: 0 0 5px 0;
@@ -115,7 +111,7 @@
       .tag-item {
         font-weight: 600;
         text-decoration: none;
-        font-size: 16px;
+        font-size: $iii-font-size;
         color: $dark-color;
         background-color: $white-color;
         border-radius: 6px;
@@ -131,7 +127,7 @@
 
   .recent-update-card-description {
     margin: 0 20px 0 25px;
-    font-size: 26px;
+    font-size: $i-font-size;
     color: $dark-color;
     flex: 1;
     overflow-x: auto;
@@ -187,10 +183,15 @@
       }
 
       .tool-item-title {
-        font-size: 22px;
+        font-size: $ii-font-size;
         font-family: $base-font-family;
         font-weight: 600;
         color: $black-color;
+
+        @include media-query($on-palm) {
+          font-size: $iii-font-size;
+          font-weight: 700;
+        }
       }
     }
 

@@ -11,12 +11,21 @@ BlinkMacSystemFont, "Segoe UI", Roboto, Arial, "Microsoft YaHei", sans-serif,
 $serif-font-family: "PT Serif", ui-serif, Georgia, "STSongti SC", "SimSong", "STSong", "Source Serif Pro", "noto serif", serif;
 $monospace-font-family: ui-monospace, Monaco, Menlo, "SF Mono Regular", "Lucida Console", SFMono-Regular, Consolas, "Courier New", Liberation Mono, monospace;
 
-$base-font-size: 15px !default;
+$base-font-size: 10px !default;
 $base-font-weight: 400 !default;
 
-$base-line-height: 1.5 !default;
+@mixin relative-font-size($ratio) {
+  font-size: $base-font-size * $ratio;
+}
+
+$icon-font-size: $base-font-size * 3 !default;
+$i-font-size: $base-font-size * 2.5 !default;
+$ii-font-size: $base-font-size * 2 !default;
+$iii-font-size: $base-font-size * 1.7 !default;
+$iiii-font-size: $base-font-size * 1.4 !default;
+
 $heavy-font-weight: 600;
-$small-font-size: $base-font-size * 0.875 !default;
+$base-line-height: 1.5 !default;
 $spacing-unit: 30px !default;
 
 $card-border-radius: 18px !default;
@@ -52,7 +61,7 @@ $content-width: 1080px !default;
 $on-palm: 512px !default;
 $on-laptop: 1080px !default;
 
-$nav-height: 100px !default;
+$nav-height: 68px !default;
 
 // Use media queries like this:
 // @include media-query($on-palm) {
@@ -71,10 +80,6 @@ $nav-height: 100px !default;
   @media screen and (prefers-color-scheme: dark) {
     @content;
   }
-}
-
-@mixin relative-font-size($ratio) {
-  font-size: $base-font-size * $ratio;
 }
 
 // Import partials.
