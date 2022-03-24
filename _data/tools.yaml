@@ -1,5 +1,5 @@
-- type: design
-  lastupdate: 2022-03-20T11:49:00
+- type: Design
+  lastupdate: 2022-03-24T23:26:00
   items:
     - name: Sketch
       category: design
@@ -7,8 +7,11 @@
       description: Elite design tool bring smooth experience.
     - name: Figma
       site: https://www.figma.com
+    - name: Zeplin
+      site: https://zeplin.io
+      description: Deliver design specs to developer made easy.
 
-- type: productivity
+- type: Task Management
   lastupdate: 2022-03-20T12:27:00
   items:
     - name: Things
@@ -18,7 +21,7 @@
       site: https://www.ticktick.com/
       description: Robust task managing tool with all platform supports.
 
-- type: reading
+- type: Reading
   lastupdate: 2022-03-19T12:41:00
   items:
     - name: Reeder
@@ -26,7 +29,7 @@
     - name: Inoreader
       site: https://www.innoreader.com
 
-- type: writing
+- type: Writing
   lastupdate: 2022-03-23T09:23:00
   items:
     - name: Ulysses
@@ -36,6 +39,23 @@
       site: https://ia.net/
       description: Plain text writing tool.
 
+- type: Productivity
+  lastupdate: 2022-03-24T23:01:00
+  items:
+    - name: Alfred
+      site: https://www.alfredapp.com
+      description: Launcher for avoid using track pad.
+
+- type: Note
+  lastupdate: 2022-03-24T23:16:00
+  items:
+    - name: Notion
+      site: https://notion.so
+      description: Ultimate note taking tool.
+    - name: Bear
+      site: https://bear.app
+      description: Orgnize note via tag.
+
 - type: Editor
   lastupdate: 2022-03-20T12:27:00
   items:
@@ -44,7 +64,7 @@
     - name: Sublime Text
       site: https://www.sublimetext.com
     
-- type: podcast
+- type: Podcast
   lastupdate: 2022-03-19T12:41:00
   items:
     - name: Xiaoyuzhou
