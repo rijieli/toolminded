@@ -70,8 +70,8 @@
     font-size: $iii-font-size;
     font-weight: 600;
     color: $dark-color;
-    line-height: 40px;
-    margin: 0 0 0 18px;
+    line-height: 1.2;
+    margin: 0 0 0 12px;
   }
 }
 
@@ -106,6 +106,7 @@
         line-height: 38px;
         margin: 0 0 5px 0;
         display: block;
+        text-align: center;
       }
 
       .tag-item {

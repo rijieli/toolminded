@@ -31,7 +31,7 @@ layout: default
             {% for group in site.data.tools %}
             <div class="tool-group m-bottom-18" id="{{group.type | downcase}}">
                 <div class="section-title">
-                    <h2>{{ group.type | capitalize }}</h2>
+                    <h2>{{ group.type }}</h2>
                     <div class="section-subtitle">{{ group.lastupdate | date: "%b %d, %Y at %R" }}</div>
                 </div>
                 <div class="tool-group-list">
