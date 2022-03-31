@@ -1,5 +1,5 @@
 - type: Design
-  lastupdate: 2022-03-24T23:26:00
+  lastupdate: 2022-03-31T11:12:00
   items:
     - name: Sketch
       category: design
@@ -10,6 +10,9 @@
     - name: Zeplin
       site: https://zeplin.io
       description: Deliver design specs to developer made easy.
+    - name: Canva
+      site: https://www.canva.com
+      description: Quick design tool for social media contents.
 
 - type: Task Management
   lastupdate: 2022-03-20T12:27:00
