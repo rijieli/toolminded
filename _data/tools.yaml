@@ -72,3 +72,10 @@
   items:
     - name: Xiaoyuzhou
       site: https://xiaoyuzhoufm.com
+
+- type: Development
+  lastupdate: 2022-04-13T22:11:00
+  items:
+    - name: Tower
+      site: https://www.git-tower.com
+      description: Git tool with low mental consumption.

@@ -9,22 +9,22 @@ layout: default
             <a href="/quotes#quote-49">First we build the tools, then they build us.</a>
         </div>
         <div class="recent-update m-top-20">
-            {% assign recent_item = site.data.recent_update %}
+            {% assign recent_item = site.data.recent_update | first %}
             <div class="section-title">
                 <h2>Recent Added</h2>
                 <div class="section-subtitle">{{ recent_item.lastupdate | date: "%b %d, %Y at %R" }}</div>
             </div>
             <div class="recent-update-card">
                 <div class="recent-update-info">
-                    <img src="/assets/tool-icon/{{recent_item.name | downcase}}.png" alt="icon">
+                    <img src="/assets/tool-icon/{{recent_item.items[0].name | downcase}}.png" alt="icon">
                     <div class="recent-update-meta">
-                        <a class="recent-update-card-title tool-link" href="{{recent_item.site}}" target="_blank">
-                            {{ recent_item.name }}
+                        <a class="recent-update-card-title tool-link" href="{{recent_item.items[0].site}}" target="_blank">
+                            {{ recent_item.items[0].name }}
                         </a>
-                        <a class="tag-item" href="#{{recent_item.category | downcase}}">{{ recent_item.category | upcase }}</a>
+                        <a class="tag-item" href="#{{recent_item.items[0].category | downcase}}">{{ recent_item.type | upcase }}</a>
                     </div>
                 </div>
-                <p class="recent-update-card-description">{{ recent_item.description }}</p>
+                <p class="recent-update-card-description">{{ recent_item.items[0].description }}</p>
             </div>
         </div>
         <div class="tool-section m-top-20">
