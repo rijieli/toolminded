@@ -1,11 +1,4 @@
 @media screen and (prefers-color-scheme: dark) {
-  .quote-bar {
-    border: 2px solid $black-color-darkmode;
-
-    a {
-      color: $black-color-darkmode;
-    }
-  }
 
   .section-title {
     h2 {
@@ -29,6 +22,10 @@
         .tag-item {
           color: $dark-color-darkmode;
           background-color: $white-color-darkmode;
+
+          &:hover {
+            color: $dark-color-darkmode;
+          }
         }
       }
     }
@@ -52,13 +49,5 @@
         }
       }
     }
-  }
-
-  .tool-link:visited {
-    color: $black-color-darkmode !important;
-  }
-
-  .tool-link:hover {
-    color: $blue-color !important;
   }
 }

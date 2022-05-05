@@ -60,12 +60,15 @@
       description: Orgnize note via tag.
 
 - type: Editor
-  lastupdate: 2022-03-20T12:27:00
+  lastupdate: 2022-05-05T08:36:00
   items:
     - name: CotEditor
       site: https://coteditor.com
     - name: Sublime Text
       site: https://www.sublimetext.com
+    - name: Acrobat
+      site: https://www.adobe.com/acrobat.html
+      description: Even simple PDF edting needs heavy tool.
     
 - type: Podcast
   lastupdate: 2022-03-19T12:41:00
